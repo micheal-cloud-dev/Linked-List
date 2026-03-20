@@ -1,4 +1,5 @@
-class Node{
+class InsertAtEndCode{
+ static class Node{
     int data;
     Node next;
 
@@ -6,9 +7,8 @@ class Node{
         this.data = data;
         this.next = null;
     }
-
-    public class InsertAtEndCode{
-        public static Node insertAtEnd(Node head,int data){
+}
+    static Node InsertAtEnd(Node head,int data){
            Node newNode = new Node(data);
 
            if(head == null){
@@ -22,8 +22,8 @@ class Node{
            temp.next = newNode;
            return head;
         }
-    }
-    public static void display(Node head){
+    
+    static void display(Node head){
         Node temp = head;
         while(temp != null){
             System.out.println(temp.data);
@@ -34,10 +34,9 @@ class Node{
 
         Node head = null;
 
-        head = insertAtEnd(head,10);
-        head = insertAtEnd(head,20);
-        head = insertAtEnd(head,30);
-        head = insertAtEnd(head,40);
+        head = InsertAtEnd(head,10);
+        head = InsertAtEnd(head,20);
+        head = InsertAtEnd(head,30);
 
         display(head);
     }
