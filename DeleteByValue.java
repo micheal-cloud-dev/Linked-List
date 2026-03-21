@@ -1,5 +1,3 @@
-//import javax.swing.event.SwingPropertyChangeSupport;
-
 class Node{
     int data;
     Node next;
