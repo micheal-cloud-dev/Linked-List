@@ -7,8 +7,8 @@ class Node{
         this.next = null;
     }
 }
-public class InsertAtPosition{
-    public static Node insertAtPosition(Node head,int position,int Insertvalue){
+    public class InsertAtPosition{
+     static Node insertAtPosition(Node head,int position,int Insertvalue){
         Node newNode = new Node(Insertvalue);
         //insert at Beginning
         if(position == 0){
@@ -25,8 +25,6 @@ public class InsertAtPosition{
         temp.next = newNode;
         return head;
     }
-
-
 public static void show(Node head){
     Node temp = head;
     while(temp != null){
