@@ -44,7 +44,7 @@ public static void main(String[] args){
     int position = 2;
     int InsertValue = 25;
 
-    head = insetAtPosition(head,position,InsertValue);
+    head = insertAtPosition(head,position,InsertValue);
 
     show(head);
   }
